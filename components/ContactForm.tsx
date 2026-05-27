@@ -47,7 +47,9 @@ export default function ContactForm() {
     if (errors[name]) setErrors((prev) => ({ ...prev, [name]: '' }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [serverError, setServerError] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const errs = validate();
     if (Object.keys(errs).length > 0) {
@@ -55,10 +57,20 @@ export default function ContactForm() {
       return;
     }
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+    setServerError('');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error('Failed to send');
       setSubmitted(true);
-    }, 1500);
+    } catch {
+      setServerError('Something went wrong. Please call us directly on +44 7624 229993.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -201,6 +213,10 @@ export default function ContactForm() {
           <input type="file" multiple accept="image/*,.pdf" className="hidden" />
         </label>
       </div>
+
+      {serverError && (
+        <p className="text-red-500 text-sm font-body text-center">{serverError}</p>
+      )}
 
       <button
         type="submit"
