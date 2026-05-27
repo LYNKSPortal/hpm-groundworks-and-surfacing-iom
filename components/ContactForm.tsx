@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Send, CheckCircle, Upload } from 'lucide-react';
+import { siteConfig } from '@/lib/siteConfig';
 
 const services = [
   'Groundworks & Construction',
@@ -67,7 +68,7 @@ export default function ContactForm() {
       if (!res.ok) throw new Error('Failed to send');
       setSubmitted(true);
     } catch {
-      setServerError('Something went wrong. Please call us directly on +44 7624 229993.');
+      setServerError(`Something went wrong. Please call us directly on ${siteConfig.phone}.`);
     } finally {
       setLoading(false);
     }

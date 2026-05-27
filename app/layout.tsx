@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import PageLoader from '@/components/PageLoader';
 import ScrollReveal from '@/components/ScrollReveal';
+import { siteConfig } from '@/lib/siteConfig';
 
 const chakraPetch = Chakra_Petch({
   subsets: ['latin'],
@@ -94,24 +95,24 @@ export const metadata: Metadata = {
 const schemaMarkup = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  '@id': 'https://hpm.im',
-  name: 'HPM Groundworks & Surfacing LTD',
+  '@id': siteConfig.url,
+  name: siteConfig.name,
   description:
     'Expert groundworks, surfacing, civils, driveways, resin bound, tarmac, paving, drainage, haulage and plant hire across the Isle of Man.',
-  url: 'https://hpm.im',
-  telephone: '+447624229993',
-  email: 'jaye@hpm.im',
+  url: siteConfig.url,
+  telephone: siteConfig.phoneTel,
+  email: siteConfig.email,
   address: {
     '@type': 'PostalAddress',
-    streetAddress: '7 Brookfield Avenue',
-    addressLocality: 'Ramsey',
-    postalCode: 'IM8 2AD',
-    addressCountry: 'IM',
+    streetAddress: siteConfig.address.street,
+    addressLocality: siteConfig.address.town,
+    postalCode: siteConfig.address.postcode,
+    addressCountry: siteConfig.address.countryCode,
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: '54.3244',
-    longitude: '-4.3864',
+    latitude: siteConfig.geo.lat,
+    longitude: siteConfig.geo.lng,
   },
   openingHoursSpecification: [
     {

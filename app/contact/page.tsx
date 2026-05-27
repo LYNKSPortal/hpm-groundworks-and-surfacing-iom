@@ -3,6 +3,7 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import PageHero from '@/components/PageHero';
 import ContactForm from '@/components/ContactForm';
 import FinanceCalculator from '@/components/FinanceCalculator';
+import { siteConfig } from '@/lib/siteConfig';
 
 export const metadata: Metadata = {
   title: 'Get a Free Quote | Contact HPM Groundworks',
@@ -36,19 +37,19 @@ const contactDetails = [
   {
     icon: <Phone size={20} className="text-[#43D5E9]" />,
     label: 'Phone',
-    value: '+44 7624 229993',
-    href: 'tel:+447624229993',
+    value: siteConfig.phone,
+    href: `tel:${siteConfig.phoneTel}`,
   },
   {
     icon: <Mail size={20} className="text-[#43D5E9]" />,
     label: 'Email',
-    value: 'jaye@hpm.im',
-    href: 'mailto:jaye@hpm.im',
+    value: siteConfig.email,
+    href: `mailto:${siteConfig.email}`,
   },
   {
     icon: <MapPin size={20} className="text-[#43D5E9]" />,
     label: 'Address',
-    value: '7 Brookfield Avenue, Ramsey, IM8 2AD, Isle of Man',
+    value: siteConfig.address.full,
     href: null,
   },
   {

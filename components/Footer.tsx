@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, Mail, MapPin, Clock, Facebook } from 'lucide-react';
+import { siteConfig } from '@/lib/siteConfig';
 
 const quickLinks = [
   { label: 'Home', href: '/' },
@@ -47,7 +48,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="https://www.facebook.com/highpressuremaintenance"
+                href={siteConfig.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Follow us on Facebook"
@@ -104,7 +105,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li>
                 <a
-                  href="tel:+447624229993"
+                  href={`tel:${siteConfig.phoneTel}`}
                   className="flex items-start gap-3 group"
                 >
                   <div className="w-8 h-8 rounded-lg bg-[#43D5E9]/10 border border-[#43D5E9]/20 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-[#43D5E9]/20 transition-colors">
@@ -113,14 +114,14 @@ export default function Footer() {
                   <div>
                     <p className="font-body text-xs text-[#6B7280] mb-0.5">Phone</p>
                     <p className="font-body text-sm text-[#B8B8B8] group-hover:text-[#43D5E9] transition-colors">
-                      +44 7624 229993
+                      {siteConfig.phone}
                     </p>
                   </div>
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:jaye@hpm.im"
+                  href={`mailto:${siteConfig.email}`}
                   className="flex items-start gap-3 group"
                 >
                   <div className="w-8 h-8 rounded-lg bg-[#43D5E9]/10 border border-[#43D5E9]/20 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-[#43D5E9]/20 transition-colors">
@@ -129,7 +130,7 @@ export default function Footer() {
                   <div>
                     <p className="font-body text-xs text-[#6B7280] mb-0.5">Email</p>
                     <p className="font-body text-sm text-[#B8B8B8] group-hover:text-[#43D5E9] transition-colors">
-                      jaye@hpm.im
+                      {siteConfig.email}
                     </p>
                   </div>
                 </a>
@@ -142,7 +143,7 @@ export default function Footer() {
                   <div>
                     <p className="font-body text-xs text-[#6B7280] mb-0.5">Address</p>
                     <p className="font-body text-sm text-[#B8B8B8]">
-                      7 Brookfield Avenue, Ramsey, IM8 2AD, Isle of Man
+                      {siteConfig.address.full}
                     </p>
                   </div>
                 </div>
