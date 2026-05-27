@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+  }
+
+  body {
+    @apply font-body bg-white text-[#111111] antialiased;
+    overflow-x: clip;
+    overflow-clip-margin: 12px;
+    width: 100%;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .cyan-text {
+    background: linear-gradient(135deg, #43D5E9, #7EF3FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl;
+  }
+
+  .glass-nav {
+    @apply bg-white/80 backdrop-blur-xl border border-white/40 shadow-glass;
+  }
+
+  .section-label {
+    @apply inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase text-cyan-primary font-body;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-cyan-primary text-black font-semibold rounded-full transition-all duration-300 hover:bg-cyan-secondary hover:shadow-cyan hover:scale-105 font-body text-sm;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 border border-white/30 text-white font-semibold rounded-full transition-all duration-300 hover:bg-white/10 hover:border-white/60 font-body text-sm;
+  }
+
+  .btn-dark {
+    @apply inline-flex items-center gap-2 px-6 py-3 border border-[#111111]/30 text-[#111111] font-semibold rounded-full transition-all duration-300 hover:bg-[#111111] hover:text-white font-body text-sm;
+  }
+
+  .service-card {
+    @apply relative overflow-hidden rounded-2xl group cursor-pointer;
+  }
+
+  .page-section {
+    @apply py-20 px-4 md:px-8 lg:px-16;
+  }
+
+  .container-max {
+    @apply max-w-site mx-auto;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .bg-grid {
+    background-image: linear-gradient(rgba(67,213,233,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(67,213,233,0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .bg-grid-light {
+    background-image: linear-gradient(rgba(100, 116, 180, 0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(100, 116, 180, 0.07) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Scroll reveal animations */
+  .sr-hidden {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .sr-hidden.sr-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .sr-skip {
+    opacity: 1;
+    transform: none;
+  }
+}
