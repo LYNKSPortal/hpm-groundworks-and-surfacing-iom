@@ -23,12 +23,12 @@ export const metadata: Metadata = {
     description:
       '15+ years experience, 500+ projects completed. Isle of Man\'s trusted groundworks & surfacing specialists. VUBA approved installers.',
     url: 'https://hpm.im/about',
-    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'About HPM Groundworks & Surfacing' }],
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'About HPM Groundworks & Surfacing' }],
   },
   twitter: {
     title: 'About HPM Groundworks & Surfacing | Isle of Man',
     description: '15+ years experience, 500+ projects, VUBA approved. Isle of Man\'s trusted groundworks specialists.',
-    images: ['/images/og-image.png'],
+    images: ['/images/og-image.jpg'],
   },
 };
 

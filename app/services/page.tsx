@@ -26,12 +26,12 @@ export const metadata: Metadata = {
     description:
       'Resin bound driveways, tarmac, block paving, drainage, foundations, haulage & plant hire. Professional groundworks across the Isle of Man.',
     url: 'https://hpm.im/services',
-    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'HPM Groundworks Services — Isle of Man' }],
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'HPM Groundworks Services — Isle of Man' }],
   },
   twitter: {
     title: 'Groundworks & Surfacing Services | HPM — Isle of Man',
     description: 'Resin bound, tarmac, block paving, drainage & groundworks across the Isle of Man. Get a free quote today.',
-    images: ['/images/og-image.png'],
+    images: ['/images/og-image.jpg'],
   },
 };
 

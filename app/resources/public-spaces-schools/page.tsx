@@ -24,12 +24,12 @@ export const metadata: Metadata = {
     description:
       'DDA-compliant, slip-resistant resin bound surfacing for schools, parks and public spaces. Safe and durable — Isle of Man.',
     url: 'https://hpm.im/resources/public-spaces-schools',
-    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'Resin Surfacing for Schools & Public Spaces' }],
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Resin Surfacing for Schools & Public Spaces' }],
   },
   twitter: {
     title: 'Resin Surfacing for Schools & Public Spaces | HPM Groundworks',
     description: 'Safe, DDA-compliant resin surfacing for schools and public spaces on the Isle of Man.',
-    images: ['/images/og-image.png'],
+    images: ['/images/og-image.jpg'],
   },
 };
 

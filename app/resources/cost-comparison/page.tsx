@@ -22,12 +22,12 @@ export const metadata: Metadata = {
     description:
       'Compare the real long-term cost of resin bound, tarmac, concrete and block paving over 20 years. Isle of Man.',
     url: 'https://hpm.im/resources/cost-comparison',
-    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'Surfacing Cost Comparison Guide' }],
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Surfacing Cost Comparison Guide' }],
   },
   twitter: {
     title: '20-Year Driveway Cost Comparison | HPM Groundworks',
     description: 'Resin vs tarmac vs block paving — which is cheapest over 20 years? Find out from HPM Groundworks Isle of Man.',
-    images: ['/images/og-image.png'],
+    images: ['/images/og-image.jpg'],
   },
 };
 

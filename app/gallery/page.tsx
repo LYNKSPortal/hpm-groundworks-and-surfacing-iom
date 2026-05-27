@@ -22,12 +22,12 @@ export const metadata: Metadata = {
     description:
       'Browse our portfolio of completed resin bound driveways, tarmac, block paving and groundworks projects across the Isle of Man.',
     url: 'https://hpm.im/gallery',
-    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'HPM Groundworks Project Gallery' }],
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'HPM Groundworks Project Gallery' }],
   },
   twitter: {
     title: 'Project Gallery | HPM Groundworks Isle of Man',
     description: 'See our completed resin driveways, tarmac, block paving & groundworks projects across the Isle of Man.',
-    images: ['/images/og-image.png'],
+    images: ['/images/og-image.jpg'],
   },
 };
 

@@ -70,14 +70,14 @@ export const metadata: Metadata = {
     title: 'HPM Groundworks & Surfacing LTD | Isle of Man',
     description:
       'Isle of Man\'s leading groundworks and surfacing contractor. Resin bound driveways, tarmac, block paving, drainage & civil engineering. Free site surveys.',
-    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'HPM Groundworks & Surfacing LTD' }],
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'HPM Groundworks & Surfacing LTD' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'HPM Groundworks & Surfacing LTD | Isle of Man',
     description:
       'Isle of Man\'s leading groundworks and surfacing contractor. Resin bound driveways, tarmac, block paving & more. Free site surveys.',
-    images: ['/images/og-image.png'],
+    images: ['/images/og-image.jpg'],
   },
   robots: {
     index: true,

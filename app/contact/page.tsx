@@ -23,12 +23,12 @@ export const metadata: Metadata = {
     description:
       'Free no-obligation site surveys and quotes. Call +44 7624 229993 or fill in our contact form. Isle of Man\'s trusted groundworks specialists.',
     url: 'https://hpm.im/contact',
-    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'Contact HPM Groundworks Isle of Man' }],
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Contact HPM Groundworks Isle of Man' }],
   },
   twitter: {
     title: 'Get a Free Quote | HPM Groundworks Isle of Man',
     description: 'Free site surveys & quotes across the Isle of Man. Call +44 7624 229993 today.',
-    images: ['/images/og-image.png'],
+    images: ['/images/og-image.jpg'],
   },
 };
 

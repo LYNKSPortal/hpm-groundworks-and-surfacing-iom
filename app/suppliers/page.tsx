@@ -22,12 +22,12 @@ export const metadata: Metadata = {
     description:
       'HPM Groundworks is a VUBA approved installer. Premium resin bound surfacing materials with a 15-year guarantee across the Isle of Man.',
     url: 'https://hpm.im/suppliers',
-    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'HPM Groundworks — VUBA Approved Installer' }],
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'HPM Groundworks — VUBA Approved Installer' }],
   },
   twitter: {
     title: 'VUBA Approved Installer | HPM Groundworks Isle of Man',
     description: 'HPM Groundworks uses VUBA premium resin bound surfacing — 15-year guarantee, Isle of Man.',
-    images: ['/images/og-image.png'],
+    images: ['/images/og-image.jpg'],
   },
 };
 

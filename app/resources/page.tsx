@@ -22,12 +22,12 @@ export const metadata: Metadata = {
     description:
       'Free guides from HPM Groundworks: care & maintenance, cost comparisons, health & safety and environmental policy.',
     url: 'https://hpm.im/resources',
-    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'HPM Groundworks Resources & Guides' }],
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'HPM Groundworks Resources & Guides' }],
   },
   twitter: {
     title: 'Resources & Guides | HPM Groundworks Isle of Man',
     description: 'Free surfacing guides, cost comparisons & policies from HPM Groundworks Isle of Man.',
-    images: ['/images/og-image.png'],
+    images: ['/images/og-image.jpg'],
   },
 };
 

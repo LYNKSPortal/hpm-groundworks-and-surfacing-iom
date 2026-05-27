@@ -22,12 +22,12 @@ export const metadata: Metadata = {
     description:
       'How to look after your resin bound driveway or path. Cleaning, seasonal care and maintenance tips from HPM Groundworks Isle of Man.',
     url: 'https://hpm.im/resources/care-maintenance',
-    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'Resin Bound Care & Maintenance Guide' }],
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Resin Bound Care & Maintenance Guide' }],
   },
   twitter: {
     title: 'Resin Driveway Care & Maintenance Guide | HPM Groundworks',
     description: 'Keep your resin bound driveway looking its best. Expert care tips from HPM Groundworks Isle of Man.',
-    images: ['/images/og-image.png'],
+    images: ['/images/og-image.jpg'],
   },
 };
 

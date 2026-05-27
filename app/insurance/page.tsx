@@ -23,12 +23,12 @@ export const metadata: Metadata = {
     description:
       '100% fully insured. Public liability, employer\'s liability & all-risk contractors insurance. VUBA approved and Construction Isle of Man accredited.',
     url: 'https://hpm.im/insurance',
-    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'HPM Groundworks — Fully Insured & Accredited' }],
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'HPM Groundworks — Fully Insured & Accredited' }],
   },
   twitter: {
     title: 'Insurance & Accreditation | HPM Groundworks Isle of Man',
     description: '100% fully insured groundworks contractor. VUBA approved installer. Isle of Man.',
-    images: ['/images/og-image.png'],
+    images: ['/images/og-image.jpg'],
   },
 };
 
