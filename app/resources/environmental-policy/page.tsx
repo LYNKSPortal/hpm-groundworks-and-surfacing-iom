@@ -7,7 +7,22 @@ import PageHero from '@/components/PageHero';
 export const metadata: Metadata = {
   title: 'Environmental Policy',
   description:
-    'HPM Groundworks & Surfacing LTD Environmental Policy — our commitment to responsible, sustainable working practices.',
+    'HPM Groundworks & Surfacing LTD Environmental Policy — our commitment to sustainable, responsible working practices and minimising environmental impact across the Isle of Man.',
+  alternates: {
+    canonical: 'https://hpm.im/resources/environmental-policy',
+  },
+  openGraph: {
+    title: 'Environmental Policy | HPM Groundworks Isle of Man',
+    description:
+      'Our commitment to sustainable, responsible groundworks and surfacing practices across the Isle of Man.',
+    url: 'https://hpm.im/resources/environmental-policy',
+    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'HPM Groundworks Environmental Policy' }],
+  },
+  twitter: {
+    title: 'Environmental Policy | HPM Groundworks Isle of Man',
+    description: 'HPM Groundworks\'s commitment to sustainable and responsible working practices.',
+    images: ['/images/og-image.png'],
+  },
 };
 
 const sections = [

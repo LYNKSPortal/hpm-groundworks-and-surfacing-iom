@@ -4,9 +4,31 @@ import { ArrowLeft, TrendingUp, Hammer, Wrench, Calendar, CheckCircle, ArrowRigh
 import PageHero from '@/components/PageHero';
 
 export const metadata: Metadata = {
-  title: '20-Year Cost Comparison',
+  title: '20-Year Surfacing Cost Comparison | Resin vs Tarmac vs Paving',
   description:
-    'Compare the 20-year cost of resin bound gravel vs tarmac, concrete, and block paving. HPM Groundworks & Surfacing LTD Isle of Man.',
+    'Which driveway surface is cheapest long-term? Compare 20-year costs of resin bound gravel, tarmac, concrete and block paving. Expert analysis by HPM Groundworks Isle of Man.',
+  keywords: [
+    'resin driveway cost comparison Isle of Man',
+    'resin vs tarmac cost',
+    'driveway cost comparison IOM',
+    'cheapest driveway surface long term',
+    'resin bound value for money Isle of Man',
+  ],
+  alternates: {
+    canonical: 'https://hpm.im/resources/cost-comparison',
+  },
+  openGraph: {
+    title: '20-Year Driveway Cost Comparison | HPM Groundworks Isle of Man',
+    description:
+      'Compare the real long-term cost of resin bound, tarmac, concrete and block paving over 20 years. Isle of Man.',
+    url: 'https://hpm.im/resources/cost-comparison',
+    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'Surfacing Cost Comparison Guide' }],
+  },
+  twitter: {
+    title: '20-Year Driveway Cost Comparison | HPM Groundworks',
+    description: 'Resin vs tarmac vs block paving — which is cheapest over 20 years? Find out from HPM Groundworks Isle of Man.',
+    images: ['/images/og-image.png'],
+  },
 };
 
 const surfaces = [

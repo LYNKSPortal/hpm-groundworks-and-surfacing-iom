@@ -3,9 +3,32 @@ import PageHero from '@/components/PageHero';
 import GalleryGrid from '@/components/GalleryGrid';
 
 export const metadata: Metadata = {
-  title: 'Gallery',
+  title: 'Project Gallery | Driveways & Surfacing Portfolio',
   description:
-    'View our portfolio of completed groundworks, resin bound driveways, tarmac, paving and commercial surfacing projects across the Isle of Man.',
+    'Browse 34+ completed groundworks and surfacing projects across the Isle of Man. Resin bound driveways, tarmac, block paving, commercial surfacing & more.',
+  keywords: [
+    'driveway gallery Isle of Man',
+    'resin driveway photos Isle of Man',
+    'tarmac driveway photos IOM',
+    'block paving photos Isle of Man',
+    'groundworks portfolio Isle of Man',
+    'surfacing projects Isle of Man',
+  ],
+  alternates: {
+    canonical: 'https://hpm.im/gallery',
+  },
+  openGraph: {
+    title: 'Project Gallery | HPM Groundworks & Surfacing Isle of Man',
+    description:
+      'Browse our portfolio of completed resin bound driveways, tarmac, block paving and groundworks projects across the Isle of Man.',
+    url: 'https://hpm.im/gallery',
+    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'HPM Groundworks Project Gallery' }],
+  },
+  twitter: {
+    title: 'Project Gallery | HPM Groundworks Isle of Man',
+    description: 'See our completed resin driveways, tarmac, block paving & groundworks projects across the Isle of Man.',
+    images: ['/images/og-image.png'],
+  },
 };
 
 export default function GalleryPage() {

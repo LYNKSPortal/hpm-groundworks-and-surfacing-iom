@@ -18,7 +18,31 @@ import FAQAccordion from '@/components/FAQAccordion';
 export const metadata: Metadata = {
   title: 'HPM Groundworks & Surfacing LTD | Expert Groundworks Isle of Man',
   description:
-    'Expert groundworks, resin bound driveways, tarmac, paving, drainage and plant hire across the Isle of Man. Unbeatable prices, free site surveys, 500+ projects completed.',
+    'Isle of Man\'s #1 groundworks & surfacing contractor. Resin bound driveways, tarmac, block paving, drainage & civil engineering. 500+ projects. Free site surveys. Call +44 7624 229993.',
+  keywords: [
+    'groundworks Isle of Man',
+    'resin bound driveway Isle of Man',
+    'tarmac driveway Isle of Man',
+    'block paving Isle of Man',
+    'surfacing contractor IOM',
+    'driveway installer Isle of Man',
+    'free driveway survey Isle of Man',
+  ],
+  alternates: {
+    canonical: 'https://hpm.im',
+  },
+  openGraph: {
+    title: 'HPM Groundworks & Surfacing LTD | Expert Groundworks Isle of Man',
+    description:
+      'Isle of Man\'s leading groundworks & surfacing contractor. Resin bound driveways, tarmac, paving, drainage. Free site surveys. 500+ projects completed.',
+    url: 'https://hpm.im',
+    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'HPM Groundworks & Surfacing — Isle of Man' }],
+  },
+  twitter: {
+    title: 'HPM Groundworks & Surfacing LTD | Isle of Man',
+    description: 'Resin bound driveways, tarmac, paving & groundworks across the Isle of Man. Free site surveys. 500+ projects completed.',
+    images: ['/images/og-image.png'],
+  },
 };
 
 const stats = [
@@ -136,9 +160,36 @@ const faqItems = [
   },
 ];
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer,
+    },
+  })),
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'HPM Groundworks & Surfacing LTD',
+  url: 'https://hpm.im',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: 'https://hpm.im/?s={search_term_string}',
+    'query-input': 'required name=search_term_string',
+  },
+};
+
 export default function HomePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       <section className="relative min-h-screen flex flex-col justify-center w-full bg-[#050505]">
         <div className="absolute inset-0 z-0">
           <Image

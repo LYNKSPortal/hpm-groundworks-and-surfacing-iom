@@ -5,9 +5,31 @@ import { ArrowRight, Award, Star, CheckCircle, Wrench, Package, Cpu } from 'luci
 import PageHero from '@/components/PageHero';
 
 export const metadata: Metadata = {
-  title: 'About Us',
+  title: 'About HPM Groundworks & Surfacing',
   description:
-    'Learn about HPM Groundworks & Surfacing LTD — your trusted Isle of Man groundworks and surfacing specialists. Expert craftsmanship, unbeatable prices, free surveys.',
+    'Meet the team behind the Isle of Man\'s trusted groundworks specialists. HPM Groundworks — 15+ years experience, 500+ projects, VUBA approved installers, fully insured.',
+  keywords: [
+    'about HPM Groundworks Isle of Man',
+    'groundworks company Isle of Man',
+    'VUBA approved installer IOM',
+    'trusted surfacing contractor Isle of Man',
+    'Isle of Man driveway company',
+  ],
+  alternates: {
+    canonical: 'https://hpm.im/about',
+  },
+  openGraph: {
+    title: 'About HPM Groundworks & Surfacing | Isle of Man',
+    description:
+      '15+ years experience, 500+ projects completed. Isle of Man\'s trusted groundworks & surfacing specialists. VUBA approved installers.',
+    url: 'https://hpm.im/about',
+    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'About HPM Groundworks & Surfacing' }],
+  },
+  twitter: {
+    title: 'About HPM Groundworks & Surfacing | Isle of Man',
+    description: '15+ years experience, 500+ projects, VUBA approved. Isle of Man\'s trusted groundworks specialists.',
+    images: ['/images/og-image.png'],
+  },
 };
 
 const coreValues = [

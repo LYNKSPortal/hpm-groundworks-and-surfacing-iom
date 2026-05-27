@@ -6,9 +6,30 @@ import ImageLightbox from '@/components/ImageLightbox';
 import PageHero from '@/components/PageHero';
 
 export const metadata: Metadata = {
-  title: 'Insurance',
+  title: 'Insurance & Accreditation',
   description:
-    'HPM Groundworks & Surfacing LTD carries full public liability insurance, employer\'s liability, and all-risk contractors insurance. 100% fully insured for every project.',
+    'HPM Groundworks & Surfacing LTD is 100% fully insured. Public liability, employer\'s liability & all-risk contractors insurance. VUBA approved and Construction Isle of Man accredited.',
+  keywords: [
+    'insured groundworks contractor Isle of Man',
+    'public liability insurance Isle of Man contractor',
+    'accredited surfacing company Isle of Man',
+    'fully insured driveway installer IOM',
+  ],
+  alternates: {
+    canonical: 'https://hpm.im/insurance',
+  },
+  openGraph: {
+    title: 'Insurance & Accreditation | HPM Groundworks Isle of Man',
+    description:
+      '100% fully insured. Public liability, employer\'s liability & all-risk contractors insurance. VUBA approved and Construction Isle of Man accredited.',
+    url: 'https://hpm.im/insurance',
+    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'HPM Groundworks — Fully Insured & Accredited' }],
+  },
+  twitter: {
+    title: 'Insurance & Accreditation | HPM Groundworks Isle of Man',
+    description: '100% fully insured groundworks contractor. VUBA approved installer. Isle of Man.',
+    images: ['/images/og-image.png'],
+  },
 };
 
 const coverItems = [

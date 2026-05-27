@@ -5,9 +5,30 @@ import { ArrowLeft, CheckCircle, ArrowRight } from 'lucide-react';
 import PageHero from '@/components/PageHero';
 
 export const metadata: Metadata = {
-  title: 'Care & Maintenance Guide',
+  title: 'Resin Bound Surface Care & Maintenance Guide',
   description:
-    'Expert care and maintenance advice for your resin bound surface from HPM Groundworks & Surfacing LTD.',
+    'Complete care and maintenance guide for resin bound driveways and paths. Cleaning tips, seasonal care, what to avoid — from HPM Groundworks & Surfacing Isle of Man.',
+  keywords: [
+    'resin bound driveway maintenance',
+    'how to clean resin driveway Isle of Man',
+    'resin bound surface care guide',
+    'driveway maintenance tips IOM',
+  ],
+  alternates: {
+    canonical: 'https://hpm.im/resources/care-maintenance',
+  },
+  openGraph: {
+    title: 'Resin Bound Surface Care & Maintenance Guide | HPM Groundworks',
+    description:
+      'How to look after your resin bound driveway or path. Cleaning, seasonal care and maintenance tips from HPM Groundworks Isle of Man.',
+    url: 'https://hpm.im/resources/care-maintenance',
+    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'Resin Bound Care & Maintenance Guide' }],
+  },
+  twitter: {
+    title: 'Resin Driveway Care & Maintenance Guide | HPM Groundworks',
+    description: 'Keep your resin bound driveway looking its best. Expert care tips from HPM Groundworks Isle of Man.',
+    images: ['/images/og-image.png'],
+  },
 };
 
 const alternatingSections = [

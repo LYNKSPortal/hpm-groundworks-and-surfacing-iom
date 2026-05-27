@@ -5,9 +5,34 @@ import { CheckCircle, ArrowRight, Phone } from 'lucide-react';
 import PageHero from '@/components/PageHero';
 
 export const metadata: Metadata = {
-  title: 'Services',
+  title: 'Groundworks & Surfacing Services',
   description:
-    'Full range of groundworks, surfacing and civils services: resin bound, tarmac, paving, drainage, haulage & plant hire across the Isle of Man.',
+    'Full range of professional groundworks and surfacing services on the Isle of Man: resin bound driveways, tarmac, block paving, drainage, foundations, haulage & plant hire.',
+  keywords: [
+    'resin bound surfacing Isle of Man',
+    'tarmac surfacing Isle of Man',
+    'block paving contractor Isle of Man',
+    'drainage contractor Isle of Man',
+    'groundworks and foundations Isle of Man',
+    'plant hire Isle of Man',
+    'haulage Isle of Man',
+    'commercial surfacing Isle of Man',
+  ],
+  alternates: {
+    canonical: 'https://hpm.im/services',
+  },
+  openGraph: {
+    title: 'Groundworks & Surfacing Services | Isle of Man',
+    description:
+      'Resin bound driveways, tarmac, block paving, drainage, foundations, haulage & plant hire. Professional groundworks across the Isle of Man.',
+    url: 'https://hpm.im/services',
+    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'HPM Groundworks Services — Isle of Man' }],
+  },
+  twitter: {
+    title: 'Groundworks & Surfacing Services | HPM — Isle of Man',
+    description: 'Resin bound, tarmac, block paving, drainage & groundworks across the Isle of Man. Get a free quote today.',
+    images: ['/images/og-image.png'],
+  },
 };
 
 const services = [
@@ -61,9 +86,32 @@ const services = [
   },
 ];
 
+const servicesSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'HPM Groundworks & Surfacing Services',
+  url: 'https://hpm.im/services',
+  itemListElement: services.map((s, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: {
+      '@type': 'Service',
+      name: s.title,
+      description: s.desc,
+      provider: {
+        '@type': 'LocalBusiness',
+        name: 'HPM Groundworks & Surfacing LTD',
+        url: 'https://hpm.im',
+      },
+      areaServed: 'Isle of Man',
+    },
+  })),
+};
+
 export default function ServicesPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }} />
       <PageHero
         title="OUR"
         titleHighlight="SERVICES"

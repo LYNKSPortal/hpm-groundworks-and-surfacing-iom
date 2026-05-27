@@ -7,7 +7,22 @@ import HealthSafetyTimeline from '@/components/HealthSafetyTimeline';
 export const metadata: Metadata = {
   title: 'Health & Safety Policy',
   description:
-    'HPM Groundworks & Surfacing LTD Health & Safety Policy for preparation and installation of resin bound gravel driveways and paths.',
+    'HPM Groundworks & Surfacing LTD Health & Safety Policy — safe working practices for resin bound gravel installation, tarmac surfacing, groundworks and civils across the Isle of Man.',
+  alternates: {
+    canonical: 'https://hpm.im/resources/health-safety-policy',
+  },
+  openGraph: {
+    title: 'Health & Safety Policy | HPM Groundworks Isle of Man',
+    description:
+      'Our health and safety policy for resin bound gravel, tarmac surfacing and groundworks projects across the Isle of Man.',
+    url: 'https://hpm.im/resources/health-safety-policy',
+    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'HPM Groundworks Health & Safety Policy' }],
+  },
+  twitter: {
+    title: 'Health & Safety Policy | HPM Groundworks Isle of Man',
+    description: 'HPM Groundworks health & safety commitment for all groundworks and surfacing projects on the Isle of Man.',
+    images: ['/images/og-image.png'],
+  },
 };
 
 const sections = [

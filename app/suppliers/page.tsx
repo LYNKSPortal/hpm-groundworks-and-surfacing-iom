@@ -5,9 +5,30 @@ import { Shield, Sparkles, HeartHandshake, ArrowRight, Phone } from 'lucide-reac
 import PageHero from '@/components/PageHero';
 
 export const metadata: Metadata = {
-  title: 'Our Suppliers',
+  title: 'Approved Suppliers | VUBA Approved Installer',
   description:
-    'HPM Groundworks & Surfacing LTD partners with VUBA — industry leaders in premium resin bound surfacing materials and technical support.',
+    'HPM Groundworks is a VUBA approved installer — Isle of Man\'s trusted supplier of premium resin bound surfacing materials with a 15-year product guarantee.',
+  keywords: [
+    'VUBA approved installer Isle of Man',
+    'resin bound supplier Isle of Man',
+    'VUBA resin IOM',
+    'approved surfacing installer Isle of Man',
+  ],
+  alternates: {
+    canonical: 'https://hpm.im/suppliers',
+  },
+  openGraph: {
+    title: 'Approved Suppliers | VUBA Installer — HPM Groundworks Isle of Man',
+    description:
+      'HPM Groundworks is a VUBA approved installer. Premium resin bound surfacing materials with a 15-year guarantee across the Isle of Man.',
+    url: 'https://hpm.im/suppliers',
+    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'HPM Groundworks — VUBA Approved Installer' }],
+  },
+  twitter: {
+    title: 'VUBA Approved Installer | HPM Groundworks Isle of Man',
+    description: 'HPM Groundworks uses VUBA premium resin bound surfacing — 15-year guarantee, Isle of Man.',
+    images: ['/images/og-image.png'],
+  },
 };
 
 const whyVubaCards = [

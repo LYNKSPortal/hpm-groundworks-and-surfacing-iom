@@ -5,6 +5,13 @@ export const metadata: Metadata = {
   title: 'Terms of Service',
   description:
     'Terms of Service for HPM Groundworks & Surfacing LTD — the terms governing use of our website and services.',
+  alternates: {
+    canonical: 'https://hpm.im/terms-of-service',
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 const sections = [

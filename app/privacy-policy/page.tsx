@@ -5,6 +5,13 @@ export const metadata: Metadata = {
   title: 'Privacy Policy',
   description:
     'Privacy Policy for HPM Groundworks & Surfacing LTD — how we collect, use, and protect your personal data.',
+  alternates: {
+    canonical: 'https://hpm.im/privacy-policy',
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 const sections = [

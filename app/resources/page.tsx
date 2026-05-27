@@ -5,9 +5,30 @@ import { Shield, Leaf, Droplets, School, TrendingUp, ArrowRight } from 'lucide-r
 import PageHero from '@/components/PageHero';
 
 export const metadata: Metadata = {
-  title: 'Resources',
+  title: 'Resources & Guides',
   description:
-    'Helpful guides, policies, comparisons, and information from HPM Groundworks & Surfacing LTD — health & safety, environmental policy, care & maintenance and more.',
+    'Free guides and information from HPM Groundworks & Surfacing: surface care & maintenance, 20-year cost comparisons, health & safety policy, environmental policy and more.',
+  keywords: [
+    'resin bound driveway guide Isle of Man',
+    'surfacing cost comparison Isle of Man',
+    'groundworks health and safety Isle of Man',
+    'driveway maintenance guide IOM',
+  ],
+  alternates: {
+    canonical: 'https://hpm.im/resources',
+  },
+  openGraph: {
+    title: 'Resources & Guides | HPM Groundworks Isle of Man',
+    description:
+      'Free guides from HPM Groundworks: care & maintenance, cost comparisons, health & safety and environmental policy.',
+    url: 'https://hpm.im/resources',
+    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'HPM Groundworks Resources & Guides' }],
+  },
+  twitter: {
+    title: 'Resources & Guides | HPM Groundworks Isle of Man',
+    description: 'Free surfacing guides, cost comparisons & policies from HPM Groundworks Isle of Man.',
+    images: ['/images/og-image.png'],
+  },
 };
 
 const resources = [

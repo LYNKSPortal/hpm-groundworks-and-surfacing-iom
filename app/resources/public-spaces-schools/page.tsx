@@ -5,9 +5,32 @@ import { ArrowLeft, CheckCircle } from 'lucide-react';
 import PageHero from '@/components/PageHero';
 
 export const metadata: Metadata = {
-  title: 'Public Spaces & Schools',
+  title: 'Resin Surfacing for Public Spaces & Schools',
   description:
-    'Resin bound surfacing for public spaces and schools — safe, durable, DDA compliant and low maintenance. HPM Groundworks Isle of Man.',
+    'Safe, DDA-compliant resin bound surfacing for schools, parks, car parks and public spaces on the Isle of Man. Slip-resistant, durable and low maintenance. HPM Groundworks.',
+  keywords: [
+    'school surfacing Isle of Man',
+    'public space resin surfacing IOM',
+    'DDA compliant surfacing Isle of Man',
+    'resin bound surfacing schools Isle of Man',
+    'playground surfacing Isle of Man',
+    'commercial resin surfacing Isle of Man',
+  ],
+  alternates: {
+    canonical: 'https://hpm.im/resources/public-spaces-schools',
+  },
+  openGraph: {
+    title: 'Resin Surfacing for Public Spaces & Schools | HPM Groundworks',
+    description:
+      'DDA-compliant, slip-resistant resin bound surfacing for schools, parks and public spaces. Safe and durable — Isle of Man.',
+    url: 'https://hpm.im/resources/public-spaces-schools',
+    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'Resin Surfacing for Schools & Public Spaces' }],
+  },
+  twitter: {
+    title: 'Resin Surfacing for Schools & Public Spaces | HPM Groundworks',
+    description: 'Safe, DDA-compliant resin surfacing for schools and public spaces on the Isle of Man.',
+    images: ['/images/og-image.png'],
+  },
 };
 
 const features = [

@@ -21,24 +21,37 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://hpm.im'),
   title: {
     default: 'HPM Groundworks & Surfacing LTD | Isle of Man',
     template: '%s | HPM Groundworks & Surfacing LTD',
   },
   description:
-    'Expert groundworks, surfacing, civils, driveways, resin bound, tarmac, paving, drainage, haulage and plant hire across the Isle of Man. Unbeatable prices, free site surveys.',
+    'Isle of Man\'s leading groundworks and surfacing contractor. Resin bound driveways, tarmac, block paving, drainage, foundations & civil engineering. Free site surveys. Call +44 7624 229993.',
   keywords: [
     'Groundworks Isle of Man',
+    'Surfacing contractor Isle of Man',
     'Driveways Isle of Man',
     'Resin bound driveway Isle of Man',
+    'Resin bound surfacing Isle of Man',
     'Tarmac driveway Isle of Man',
-    'Paving Isle of Man',
+    'Tarmac surfacing Isle of Man',
+    'Block paving Isle of Man',
+    'Paving contractor Isle of Man',
     'Drainage contractor Isle of Man',
     'Commercial groundworks Isle of Man',
+    'Civil engineering Isle of Man',
     'Plant hire Isle of Man',
-    'Surfacing contractor Isle of Man',
+    'Haulage Isle of Man',
+    'Driveway contractor Isle of Man',
+    'HPM Groundworks',
+    'VUBA approved installer Isle of Man',
+    'Resin driveway IOM',
+    'Groundworks IOM',
   ],
-  authors: [{ name: 'HPM Groundworks & Surfacing LTD' }],
+  authors: [{ name: 'HPM Groundworks & Surfacing LTD', url: 'https://hpm.im' }],
+  creator: 'HPM Groundworks & Surfacing LTD',
+  publisher: 'HPM Groundworks & Surfacing LTD',
   icons: {
     icon: '/favicon.png',
     shortcut: '/favicon.png',
@@ -51,12 +64,25 @@ export const metadata: Metadata = {
     siteName: 'HPM Groundworks & Surfacing LTD',
     title: 'HPM Groundworks & Surfacing LTD | Isle of Man',
     description:
-      'Expert groundworks, surfacing, civils, driveways, resin bound, tarmac, paving, drainage, haulage and plant hire across the Isle of Man.',
+      'Isle of Man\'s leading groundworks and surfacing contractor. Resin bound driveways, tarmac, block paving, drainage & civil engineering. Free site surveys.',
     images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'HPM Groundworks & Surfacing LTD' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'HPM Groundworks & Surfacing LTD | Isle of Man',
+    description:
+      'Isle of Man\'s leading groundworks and surfacing contractor. Resin bound driveways, tarmac, block paving & more. Free site surveys.',
+    images: ['/images/og-image.png'],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
