@@ -63,6 +63,63 @@ export async function POST(req: NextRequest) {
       `,
     });
 
+    await transporter.sendMail({
+      from: `"HPM Groundworks & Surfacing" <${process.env.MAIL_FROM}>`,
+      to: email,
+      replyTo: process.env.MAIL_TO,
+      subject: `Thanks for your enquiry, ${firstName} — HPM Groundworks`,
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <div style="background: #111111; padding: 24px; border-radius: 8px 8px 0 0;">
+            <img src="https://hpm.im/images/logo.png" alt="HPM Groundworks & Surfacing" style="height: 48px; width: auto; filter: invert(1);" />
+          </div>
+          <div style="background: #ffffff; padding: 32px 24px; border-radius: 0 0 8px 8px; border: 1px solid #e5e5e5;">
+            <h2 style="color: #111111; font-size: 20px; margin: 0 0 8px;">Thanks for getting in touch, ${firstName}!</h2>
+            <p style="color: #6b7280; font-size: 14px; line-height: 1.6; margin: 0 0 24px;">
+              We've received your enquiry and a member of our team will be in touch with you within the next <strong style="color: #111111;">24 hours</strong>.
+            </p>
+
+            <div style="background: #f7f7f7; border-radius: 8px; padding: 20px; margin-bottom: 24px;">
+              <p style="color: #111111; font-size: 13px; font-weight: 600; margin: 0 0 12px; text-transform: uppercase; letter-spacing: 0.05em;">Your Submission</p>
+              <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                  <td style="padding: 6px 0; color: #6b7280; font-size: 13px; font-weight: 600; width: 130px;">Name</td>
+                  <td style="padding: 6px 0; color: #111111; font-size: 13px;">${firstName} ${lastName}</td>
+                </tr>
+                <tr>
+                  <td style="padding: 6px 0; color: #6b7280; font-size: 13px; font-weight: 600;">Phone</td>
+                  <td style="padding: 6px 0; color: #111111; font-size: 13px;">${phone}</td>
+                </tr>
+                <tr>
+                  <td style="padding: 6px 0; color: #6b7280; font-size: 13px; font-weight: 600;">Service</td>
+                  <td style="padding: 6px 0; color: #111111; font-size: 13px;">${service}</td>
+                </tr>
+                <tr>
+                  <td style="padding: 6px 0; color: #6b7280; font-size: 13px; font-weight: 600; vertical-align: top;">Details</td>
+                  <td style="padding: 6px 0; color: #111111; font-size: 13px; line-height: 1.6;">${details.replace(/\n/g, '<br>')}</td>
+                </tr>
+              </table>
+            </div>
+
+            <p style="color: #6b7280; font-size: 13px; line-height: 1.6; margin: 0 0 8px;">
+              If you need to speak with us sooner, please don't hesitate to call or email us directly:
+            </p>
+            <p style="margin: 0 0 4px;">
+              <a href="tel:+447624229993" style="color: #43D5E9; font-size: 13px; font-weight: 600; text-decoration: none;">📞 +44 7624 229993</a>
+            </p>
+            <p style="margin: 0 0 24px;">
+              <a href="mailto:jaye@hpm.im" style="color: #43D5E9; font-size: 13px; font-weight: 600; text-decoration: none;">✉️ jaye@hpm.im</a>
+            </p>
+
+            <div style="border-top: 1px solid #e5e5e5; padding-top: 16px; font-size: 12px; color: #aaaaaa;">
+              HPM Groundworks & Surfacing LTD · 7 Brookfield Avenue, Ramsey, IM8 2AD, Isle of Man<br/>
+              <a href="https://hpm.im" style="color: #43D5E9; text-decoration: none;">hpm.im</a>
+            </div>
+          </div>
+        </div>
+      `,
+    });
+
     return NextResponse.json({ success: true }, { status: 200 });
   } catch (error) {
     console.error('Contact form error:', error);
