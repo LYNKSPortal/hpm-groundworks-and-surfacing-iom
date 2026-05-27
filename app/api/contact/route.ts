@@ -23,6 +23,7 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail({
       from: `"HPM Website" <${process.env.MAIL_FROM}>`,
       to: process.env.MAIL_TO,
+      cc: process.env.MAIL_CC,
       replyTo: email,
       subject: `New Quote Request — ${service}`,
       html: `
