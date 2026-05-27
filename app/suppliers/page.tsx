@@ -124,23 +124,16 @@ export default function SuppliersPage() {
               </Link>
             </div>
 
-            <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)] border border-[#111111]/8">
-              <video
-                src="https://hpm.im/wp-content/uploads/2025/07/d37e02d5062841ad84555eaea77d78fe.HD-1080p-7.2Mbps-20172608.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="w-full h-full object-cover block"
-                style={{ maxHeight: '560px' }}
+            <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)] border border-[#111111]/8 aspect-video">
+              <iframe
+                src="https://www.youtube.com/embed/5NzQBcop2Nk?rel=0&modestbranding=1"
+                title="HPM Groundworks & Surfacing — VUBA Resin Bound"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+                style={{ border: 0 }}
+                loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
-              <div className="absolute bottom-6 left-6 right-6 pointer-events-none">
-                <blockquote className="font-body text-sm text-white leading-relaxed">
-                  &ldquo;Providing not just quality materials, but the technical support to ensure
-                  longevity.&rdquo;
-                </blockquote>
-              </div>
             </div>
           </div>
         </div>
